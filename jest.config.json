@@ -1,0 +1,22 @@
+{
+  "preset": "ts-jest/presets/js-with-babel",
+  "testEnvironment": "node",
+  "extensionsToTreatAsEsm": [".ts"],
+  "globals": {
+    "ts-jest": {
+      "useESM": true
+    }
+  },
+  "moduleNameMapper": {
+    "^(\\.{1,2}/.*)\\.js$": "$1"
+  },
+  "verbose": true,
+  "roots": ["./__tests__"],
+  "collectCoverage": true,
+  "collectCoverageFrom": ["**/*.ts", "!**/node_modules/**"],
+  "testMatch": ["**/*.test.ts"],
+  "moduleDirectories": ["node_modules"],
+  "coverageDirectory": "__testscoverage__",
+  "coverageReporters": ["html"],
+  "transformIgnorePatterns": ["/node_modules/(?!@ts-scratcher)/"]
+}

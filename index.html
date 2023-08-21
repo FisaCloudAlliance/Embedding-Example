@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/logo.webp" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="/logo.webp" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>FISA Open AI API</title>
+
+    <link rel="stylesheet" href="/assets/site.css?v=0.9.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- 
+      Google font の読み込みを最速化する hack コードを入れる
+      https://csswizardry.com/2020/05/the-fastest-google-fonts/
+     -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!-- Google OneTap authentication -->
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <!-- 日本の電話番号仕様 -->
+    <script type="module" src="/cleave-phone.jp.js"></script>
+    <!-- 祝祭日判定 -->
+    <script src="https://cdn.rawgit.com/osamutake/japanese-holidays-js/v1.0.10/lib/japanese-holidays.min.js"></script>
+    
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>   
+    <script type="module" src="/src/index.tsx"></script> 
+  </body>
+</html>
